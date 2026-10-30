@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Adrielly - Desenvolvimento Web</title>
+    <style>
+        :root {
+            --primary-color: #1e293b;
+            --secondary-color: #0284c7;
+            --accent-color: #38bdf8;
+            --bg-color: #f8fafc;
+            --text-color: #334155;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+        }
+
+        header p {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        .project-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: var(--secondary-color);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Adrielly De Jesus Silva</h1>
+        <p>Estudante de Desenvolvimento Web | CEET Vasco Coutinho</p>
+    </header>
+
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre o Aluno</a>
+        <a href="#projetos">Projetos Desenvolvidos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+        <!-- Página Inicial / Apresentação -->
+        <section id="home">
+            <h2>Página Inicial</h2>
+            <p>Seja bem-vindo(a) ao meu portfólio digital! Este espaço documenta a minha evolução acadêmica, competências técnicas e os principais projetos práticos desenvolvidos ao longo do curso de <strong>Desenvolvimento Web</strong>.</p>
+        </section>
+
+        <!-- Sobre o Aluno -->
+        <section id="sobre">
+            <h2>Sobre o Aluno</h2>
+            <p>Sou aluna do <strong>CEET Vasco Coutinho</strong>, focado no aprendizado e aplicação de tecnologias voltadas para a criação de soluções web modernas e eficientes. Minha jornada abrange estudos aprofundados em estruturação de páginas, estilização avançada de layouts, lógica de programação e interatividade para a experiência do usuário.</p>
+            <p><strong>Principais matérias e áreas de estudo:</strong></p>
+            <ul>
+                <li><strong>Fundamentos de Web Design:</strong> Criação de estruturas semânticas e acessíveis (HTML5).</li>
+                <li><strong>Estilização e Layouts Responsivos:</strong> Uso de CSS Avançado, Flexbox e CSS Grid para adaptação em diferentes telas.</li>
+                <li><strong>Lógica e Programação Front-End:</strong> Desenvolvimento de scripts para comportamento dinâmico de páginas.</li>
+            </ul>
+        </section>
+
+        <!-- Projetos Desenvolvidos -->
+        <section id="projetos">
+            <h2>Projetos Desenvolvidos</h2>
+            
+            <div class="project-card">
+                <h3>1. Site Institucional Responsivo</h3>
+                <p><strong>Descrição:</strong> Desenvolvimento de um layout multi-colunas totalmente adaptável utilizando HTML5 semântico e CSS Flexbox/Grid, garantindo excelente experiência visual em desktops e dispositivos móveis.</p>
+                <p><em>Competências aplicadas:</em> Estruturação web, tipografia, paletas de cores e design responsivo.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>2. Estilização Avançada de Formulários</h3>
+                <p><strong>Descrição:</strong> Criação e customização de formulários de cadastro e contato focados em usabilidade (UX), aplicando estados interativos com seletores avançados de CSS.</p>
+                <p><em>Competências aplicadas:</em> Folhas de estilo, interatividade visual e usabilidade de inputs.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>3. Página de Portfólio Pessoal</h3>
+                <p><strong>Descrição:</strong> Estruturação e desenvolvimento desta própria página web para exibição de competências técnicas, histórico acadêmico e projetos do curso.</p>
+                <p><em>Competências aplicadas:</em> Organização de código-fonte, navegação interna por âncoras e boas práticas de desenvolvimento front-end.</p>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Tem interesse em parcerias, oportunidades na área de desenvolvimento ou deseja trocar ideias sobre tecnologia? Entre em contato:</p>
+            <ul>
+                <li><strong>Instituição:</strong> CEET Vasco Coutinho</li>
+                <li><strong>Curso:</strong> Desenvolvimento Web</li>
+                <li><strong>E-mail / Perfil:</strong> Disponível mediante solicitação</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Adrielly De Jesus Silva. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
